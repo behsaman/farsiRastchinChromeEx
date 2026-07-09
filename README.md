@@ -1,37 +1,40 @@
-# 🚀 Vazirmatn & RTL Web Customizer
-**A premium, minimal, and smart web accessibility extension developed by BEHSAMAN.**
+<div dir="rtl">
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-
----
-
-## ✨ An Elegant Gift to the Persian Community / هدیه‌ای به فارسی‌زبانان عزیز
-
-> **«تقدیم به فارسی‌زبانان عزیز؛ برای تجربه‌ای زیباتر، بومی‌تر و منظم‌تر در وب.» — BEHSAMAN**
-> 
-> Reading Persian/Arabic text on default web layouts can be exhausting due to poor font rendering and misaligned left-to-right (LTR) structures. This extension was crafted as a completely free, open-source gift to the Persian community to bring the masterfully designed **Vazirmatn** font and seamless Right-to-Left (RTL) typography to every corner of the internet.
+# 🚀 افزونه نمایش وب با فونت وزیر و ساختار RTL
+**یک ابزار مینیمال، هوشمند و کاربردی برای شخصی‌سازی صفحات وب، توسعه‌یافته توسط BEHSAMAN.**
 
 ---
 
-## 🛠️ Key Features
-
-- **🔴 Ultimate Master Toggle:** Instantly enable or disable the entire extension with a single click without messing up your configuration.
-- **✒️ Native Vazirmatn Injection:** Forces beautiful, high-legibility Vazirmatn typography across any webpage dynamically.
-- **↔️ Smart RTL Layout Engine:** Auto-aligns grids, text bodies, inputs, and textareas to a clean Right-to-Left format.
-- **⚡ Code-Snippet Isolation (Developer Friendly):** When toggled on, it selectively skips code elements (`<pre>`, `<code>`, `<kbd>`, etc.) and syntax-highlighted blocks. Your code remains perfectly LTR and monospaced while the prose stays beautifully RTL.
-- **🧩 Icon-Font Protection:** Uses strict, predictive CSS selectors to isolate and preserve web-icons (FontAwesome, Material Icons, Glyphicons, SVGs, and brand logos) so layouts never break into blank squares.
-- **💾 Lightweight & Persistent State:** Minimal footprints utilizing `chrome.storage` to instantly save and sync your preferences across tabs seamlessly.
+<blockquote>
+<b>💝 هدیه‌ای به فارسی‌زبانان عزیز</b><br>
+خواند متون فارسی در صفحات وب با فونت‌های پیش‌فرض مرورگرها معمولاً خسته‌کننده است. این افزونه به عنوان یک هدیه کاملاً رایگان و متن‌باز به جامعه فارسی‌زبان تقدیم می‌شود تا فونت زیبای <b>وزیرمتن</b> و تراز راست‌چین هوشمند را به تمام گوشه‌های وب بیاورد.
+</blockquote>
 
 ---
 
-## 📦 Architecture & Directory Structure
+## ✨ قابلیت‌های کلیدی
 
-```text
-├── manifest.json       # App configuration & permissions (Manifest V3)
-├── popup.html          # Clean & modern dashboard UI
-├── popup.js            # Frontend logic & state controller
-├── content.js          # High-performance CSS injection script
-├── icon16.png          # App favicon icon
-├── icon48.png          # Dashboard management icon
-└── icon128.png         # Main storefront and installation asset
+- **کلید فعال‌سازی اصلی:** روشن و خاموش کردن کل افزونه تنها با یک کلیک.
+- **تزریق فونت وزیر:** اعمال خودکار فونت باکیفیت و خوانای Vazirmatn روی تمام صفحات.
+- **راست‌چین هوشمند (RTL):** اصلاح جهت متون، فرم‌ها و جدول‌ها.
+- **ایزوله‌سازی کدهای برنامه‌نویسی:** با فعال کردن سوییچ مربوطه، بخش‌های کد (`code`، `pre`) دست‌نخورده و چپ‌چین باقی می‌مانند تا خوانایی کدهای فنی به هم نریزد.
+- **حفاظت از آیکون‌ها:** ممانعت هوشمند از تغییر فونت آیکون‌ها (مانند FontAwesome) برای جلوگیری از بهم‌ریختگی ظاهری سایت‌ها.
+
+---
+
+## 🚀 راهنمای نصب سریع و لذت بردن از ابزار!
+
+برای نصب این افزونه نیازی به پرداخت هزینه به استور گوگل نیست؛ کافی است مراحل ساده زیر را طی کنید:
+
+1. **دانلود فایل:** از منوی سمت راست همین صفحه، وارد بخش **Releases** شوید و آخرین نسخه فایل `ZIP` را دانلود کرده و از حالت فشرده (Extract) خارج کنید.
+2. **فعال‌سازی حالت توسعه‌دهنده:** مرورگر کروم را باز کنید و به آدرس `chrome://extensions` بروید. در بالا سمت راست، گزینه **Developer mode** را روشن کنید.
+3. **بارگذاری افزونه:** روی دکمه **Load unpacked** در بالا سمت چپ کلیک کرده و پوشه استخراج‌شده را انتخاب کنید.
+4. **لذت ببرید!** آیکون افزونه را در مرورگر خود پین کنید، آن را بر اساس سلیقه خود تنظیم کنید و از وب‌گردی با فونت زیبای وزیرمتن لذت ببرید!
+
+---
+
+<p align="center">
+  Developed with 💻 by <b><a href="https://github.com/BEHSAMAN">BEHSAMAN</a></b> • 2026
+</p>
+
+</div>
