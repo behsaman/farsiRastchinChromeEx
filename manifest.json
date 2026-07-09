@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "فونت فارسی و راست چین",
+  "version": "2.2",
+  "author": "BEHSAMAN",
+  "description": "کنترل فونت وزیر و جهت نمایش (RTL/LTR) صفحات وب - توسعه یافته توسط BEHSAMAN",
+  "permissions": ["storage"],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}

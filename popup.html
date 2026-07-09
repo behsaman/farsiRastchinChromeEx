@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      width: 220px;
+      padding: 15px;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      margin: 0;
+      background-color: #ffffff;
+    }
+    .row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+    .row:last-child { margin-bottom: 0; }
+    hr {
+      border: 0;
+      border-top: 1px solid #eee;
+      margin: 10px 0;
+    }
+    .main-toggle {
+      font-weight: bold;
+      color: #333;
+    }
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 40px;
+      height: 22px;
+    }
+    .switch input { opacity: 0; width: 0; height: 0; }
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: #ccc;
+      transition: .3s;
+      border-radius: 22px;
+    }
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 16px; width: 16px;
+      left: 3px; bottom: 3px;
+      background-color: white;
+      transition: .3s;
+      border-radius: 50%;
+    }
+    input:checked + .slider { background-color: #2196F3; }
+    input:checked + .slider:before { transform: translateX(18px); }
+    #mainToggle:checked + .slider { background-color: #4CAF50; }
+    
+    .disabled {
+      opacity: 0.5;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="row main-toggle">
+    <span>فعال‌سازی افزونه</span>
+    <label class="switch">
+      <input type="checkbox" id="mainToggle" checked>
+      <span class="slider"></span>
+    </label>
+  </div>
+  
+  <hr>
+
+  <div id="subOptions">
+    <div class="row">
+      <span>فونت وزیر</span>
+      <label class="switch">
+        <input type="checkbox" id="fontToggle" checked>
+        <span class="slider"></span>
+      </label>
+    </div>
+    <div class="row">
+      <span>راست‌چین (RTL)</span>
+      <label class="switch">
+        <input type="checkbox" id="rtlToggle" checked>
+        <span class="slider"></span>
+      </label>
+    </div>
+    <div class="row">
+      <span>فقط المان‌های متنی</span>
+      <label class="switch">
+        <input type="checkbox" id="textOnlyToggle" checked>
+        <span class="slider"></span>
+      </label>
+    </div>
+  </div>
+
+  <hr>
+  <div style="text-align: center; font-size: 11px; color: #777; font-family: sans-serif; direction: ltr;">
+    Developed by <strong>BEHSAMAN</strong>
+  </div>
+
+
+  <script src="popup.js"></script>
+</body>
+</html>
